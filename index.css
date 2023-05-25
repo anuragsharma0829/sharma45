@@ -1,0 +1,367 @@
+
+  body {
+    background-color: black;
+    margin: 0;
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    order: 1; /* Change the order of toggle button */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 10px;
+  }
+  
+  .navbar-left {
+    order: 2; /* Change the order of "ABOUT" */
+  }
+  
+  /* Media query for mobile views */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .navbar-menu {
+      display: none; /* Hide menu by default on mobile */
+      width: 100%;
+    }
+  
+    .navbar-menu.active {
+      display: flex; /* Show menu when active class is added */
+      flex-direction: column;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show toggle button on mobile */
+    }
+  
+    .navbar-toggle:focus {
+      outline: none;
+    }
+  }
+  
+  
+  #home{
+    color: rgb(128, 4, 55)
+  }
+  .navitem{
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .line{
+    background-color: white;
+    color: white;
+    height: 5px;
+  }
+  .intro{
+    color: white;
+  }
+  .center{
+    text-align: center;
+  }
+  #btnwork{
+    align-content: center;
+  }
+  .button-container {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+    margin-left: 5px;
+  }
+  /* About CSS */
+  .about{
+    text-decoration: underline;
+  }
+  .size {
+    font-size: 35px;
+    margin-bottom:10px;
+}
+
+.centerr {
+    margin-left: 52px;
+}
+
+.text {
+  margin-right:10px;
+  color:aliceblue
+}
+
+.textcenter{
+    margin-left:30px
+}
+
+ 
+.responsive{
+    margin-left:10px
+}
+.Intuitive{
+    margin-left:20px
+}
+.Dynamic{
+    margin-left:30px
+}
+.text3{
+    margin-right :10px;
+}
+  
+.hexagon {
+    width: 320px;
+    height:300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hexagon:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
+  }
+  
+  .hexagon img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .progress-bar {
+    position: relative;
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.5s ease;
+    overflow: hidden;
+  }
+  
+  .progress-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co/Jn0PYjF/wave.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: wave-animation 2s linear infinite;
+  }
+  
+  .progress-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  
+  
+  /* Project CSS */
+
+  .wrapper {
+      max-width: 100%;
+      margin: 50px auto;
+      padding: 20px 0;
+      background-color: #ecfff3;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
+  }
+  
+  .tab-content {
+      padding: 10px 20px;
+  }
+  .nav-tabs a {
+      border: 0!important;
+      background-color: transparent!important;
+  }
+  .nav-tabs li.active {
+      border-bottom: 2px solid #5453d2;
+  }
+  .nav-tabs li {
+      border-bottom: 2px solid transparent;
+  }
+  .nav-tabs li a {
+      width: 100%;
+      text-align: center;
+  }
+  ul.nav.nav-tabs {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+  }
+  .nav-tabs li {
+      flex-basis: 90px;
+      min-width: 190px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0!important;
+  }
+  .tabs-wrapper{
+      position: relative;
+  }
+  span.left, span.right {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#5453D2;
+      border-radius: 50%;
+      left: -50px;
+      top: 8px;
+      cursor: pointer;
+      color: #ffffff;
+  }
+  span.right{
+   right: -50px;
+   left:unset;
+  
+  }
+  .scroller-btn.inactive {
+      opacity: 0.3;
+      pointer-events: none;
+  }
+  
+  
+  .card-button{
+    cursor: pointer;
+    display: contents
+  }
+  .example-card {
+    max-width: 450px;
+    border-radius: 10px;
+  }
+  
+  .example-header-image-pos {
+    background-image: url("https://source.unsplash.com/400x200/?restaurant");
+    background-size: cover;
+  }
+
+  .example-header-image {
+    background-image: url("https://source.unsplash.com/400x200/?quiz,exam,school");
+    background-size: cover;
+  }
+
+  .example-header-image-assets{
+    background-image: url("https://source.unsplash.com/400x200/?hardware,assets");
+    background-size: cover;
+  }
+
+  .example-header-image-assets-true{
+    background-image: url("https://source.unsplash.com/400x200/?medical");
+    background-size: cover;
+  }
+
+  .modal-content{
+    height: 200%;
+    align-items: center;
+  }
+
+  .linee{
+    height: 1px;
+  }
+ 
+
+  
+  /* resume */
+  
+.line3{
+      color: black;
+  }
+  .cheak{
+      font-size: 28px;
+  }
+  .cheakk{
+      font-size: 35px;
+  }
+  .summry{
+      font-size: 35px; 
+  }
+  .ml2{
+      margin-left: 15px;
+  }
+  .ml22{
+      margin-left: 35px;
+  }
+  .lan{
+      font-size: 23px;
+  }
+  .img {
+      border-radius: 50%;
+    }
